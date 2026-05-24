@@ -321,7 +321,7 @@
 
   <div class="header">
     <button class="back-btn" id="backBtn" onclick="goBack()" style="display:none">←</button>
-    <div class="logo"><div class="logo-icon">💝</div>MUJER <span>MAGNÉTICA</span></div>
+    <div class="logo"><div class="logo-icon">💝</div>RECONQUISTA <span>MAGNÉTICA</span></div>
   </div>
   <div class="progress-bar-wrap"><div class="progress-bar-fill" id="progressFill"></div></div>
 
@@ -329,7 +329,7 @@
   <div class="page active cover-page" id="page-1">
     <h1>NO DEJES QUE ÉL SE VAYA<span>¡PARA SIEMPRE!</span></h1>
     <p class="cover-subtitle">Test rápido de 1 minuto:</p>
-    <div class="cover-img">💑</div>
+    <img src="https://app.mujermagnetica.space/images/pag1-img-casal.webp" alt="Casal feliz" style="width:100%;max-width:340px;border-radius:20px;object-fit:cover;margin:0 auto 24px;display:block;" />
     <button class="btn-pink" onclick="goTo(2)">INICIAR TEST GRATUITO</button>
     <div class="attention-box"><span>⚠️</span><div><strong>ATENCIÓN</strong><br>¡Solo continúa si de verdad quieres que él vuelva a tu vida!</div></div>
   </div>
@@ -385,7 +385,7 @@
     <p><strong>Un estudio publicado por la Harvard Medical School y difundido por BBC Mundo reveló algo sorprendente...</strong></p>
     <!-- ⚠️ SUBSTITUA O SRC ABAIXO PELO LINK DA SUA IMAGEM DA BBC -->
     <img
-      src="PEGA_AQUÍ_EL_LINK_DE_LA_IMAGEN_BBC"
+      src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag6-img-noticia.png"
       alt="BBC News Brasil - Estudio revela ciclo del cerebro"
       style="width:100%;border-radius:12px;display:block;margin:14px 0;"
       onerror="this.style.display='none';document.getElementById('bbc-fallback').style.display='block';"
@@ -396,7 +396,7 @@
     </div>
     <p>Existen <span class="pink-link">cuatro zonas específicas en el cerebro masculino</span> que son cruciales para la química de las parejas...</p>
     <p>Estas zonas se conocen como el <span class="pink-link">ciclo A.R.E.A.</span></p>
-    <div class="brain-imgs"><div class="brain-img">🧠</div><div class="brain-img">⚡</div></div>
+    <div class="brain-imgs"><div class="brain-img"><img src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag6-img1.png" style="width:100%;height:100%;object-fit:cover;border-radius:12px;" /></div><div class="brain-img"><img src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag6-img2.png" style="width:100%;height:100%;object-fit:cover;border-radius:12px;" /></div></div>
     <p>Pero con el tiempo, la rutina agotadora, el estrés, la falta de novedad en la relación y los conflictos constantes, <strong>estas zonas se van apagando...</strong></p>
     <p>Pero cuando aprendes a <strong>reactivar y estimular</strong> este ciclo, tocas áreas de su cerebro que <span class="pink-link">lo hacen recordarte, y él vuelve a estar totalmente obsesionado contigo</span>, dispuesto a hacer todo para volver a tu lado.</p>
     <p><strong>¡Y yo estoy aquí para enseñarte cómo reactivar ese ciclo!</strong></p>
@@ -448,7 +448,7 @@
   <div class="page urgency-page" id="page-10">
     <h2>¡TIENES QUE ACTUAR AHORA!</h2>
     <p class="sub">¡O podrías perderlo para siempre!</p>
-    <div class="urgency-img">😔</div>
+    <img src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag10-img-cansado.webp" alt="Homem triste" style="width:100%;border-radius:16px;object-fit:cover;margin-bottom:16px;display:block;" />
     <p>Cada día que pasa sin hacer nada, o tomando decisiones equivocadas, reduce tus posibilidades de reconquistarlo...</p>
     <div class="risk-badge">¡Y corres el riesgo de perderlo para siempre!</div>
     <button class="btn-green" onclick="goTo(11)">CONTINUAR TEST</button>
@@ -509,7 +509,7 @@
   <!-- PAGE 12: SPECIALIST -->
   <div class="page specialist-page" id="page-12">
     <h2>¡Gracias por tus respuestas! Estoy aquí para ayudarte</h2>
-    <div class="specialist-photo">👩‍💼</div>
+    <img src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag12-img-especialista.png" alt="Martina Alves" style="width:130px;height:130px;border-radius:50%;object-fit:cover;margin:0 auto 14px;display:block;border:3px solid var(--pink);" />
     <p>Mucho gusto, soy <strong>Martina Alves</strong>, psicóloga especializada en Neurociencia del Comportamiento y Ciencia del Apego.</p>
     <p>Ya ayudé a <strong>más de 5.300 mujeres</strong> a recuperar sus relaciones usando inteligencia emocional y ciencia. <span class="pink-link">Sin jueguitos, desapariciones ni fórmulas vacías.</span></p>
     <p>Lo que realmente funciona es <span class="pink-link">entender cómo el cerebro masculino procesa las emociones.</span> Existen <strong>cuatro áreas en el cerebro</strong> responsables del placer y el vínculo emocional, que con el tiempo pueden apagarse.</p>
@@ -574,14 +574,21 @@
   <div class="page testimonials-page" id="page-17">
     <h2>¡Mira lo que ella logró, aunque su ex ni siquiera le dirigía la mirada!</h2>
     <p class="sub"><strong>El 93% de las mujeres</strong> vieron resultados notables en los primeros días aplicando el método...</p>
-    <div class="video-thumb" onclick="goTo(18)">
-      <div class="play-circle">▶</div>
-      <p>Depoimento em vídeo</p>
+    <!-- CARROSSEL DEPOIMENTOS -->
+    <div style="position:relative;overflow:hidden;border-radius:16px;margin-bottom:16px;" id="carousel">
+      <div class="slide" style="display:block;"><img src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag17-img1.png" style="width:100%;border-radius:16px;display:block;" alt="Depoimento 1" /></div>
+      <div class="slide" style="display:none;"><img src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag17-img2.png" style="width:100%;border-radius:16px;display:block;" alt="Depoimento 2" /></div>
+      <div class="slide" style="display:none;"><img src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag17-img3.png" style="width:100%;border-radius:16px;display:block;" alt="Depoimento 3" /></div>
     </div>
-    <div class="whatsapp-card">
-      <div class="whatsapp-msg">Hooola, ¡estoy súper contenta con los resultados!! Recuperé a mi ex en 9 días<span class="whatsapp-time">18:38</span></div>
-      <div class="whatsapp-msg">Te juro que tenía miedo de comprarlo jajaja pero me sorprendió muchísimo 🥰😍<span class="whatsapp-time">18:38</span></div>
-      <div class="whatsapp-msg">¡Muchísimas graciaas por todo!<span class="whatsapp-time">18:39</span></div>
+    <div style="display:flex;justify-content:center;gap:8px;margin-bottom:12px;" id="dots">
+      <div class="cdot active" onclick="goSlide(0)" style="width:28px;height:6px;border-radius:3px;background:#E91E8C;cursor:pointer;transition:all 0.3s;"></div>
+      <div class="cdot" onclick="goSlide(1)" style="width:8px;height:6px;border-radius:3px;background:#ddd;cursor:pointer;transition:all 0.3s;"></div>
+      <div class="cdot" onclick="goSlide(2)" style="width:8px;height:6px;border-radius:3px;background:#ddd;cursor:pointer;transition:all 0.3s;"></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding:0 4px;">
+      <button onclick="prevSlide()" style="background:none;border:1.5px solid #ddd;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:18px;color:#555;">‹</button>
+      <span style="font-size:12px;color:#aaa;" id="slideCounter">1 / 3</span>
+      <button onclick="nextSlide()" style="background:none;border:1.5px solid #ddd;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:18px;color:#555;">›</button>
     </div>
     <p class="you-want">¿Tú también quieres vivir esto?</p>
     <button class="btn-pink" onclick="goTo(18)">¡SÍ! QUIERO Y ESTOY LISTA</button>
@@ -590,19 +597,7 @@
   <!-- PAGE 18: CHAT -->
   <div class="page chat-page" id="page-18">
     <h2>El siguiente paso es solo para quienes quieren un plan secreto, personalizado y comprobado <span>para hacer que él suplique volver</span></h2>
-    <div class="fake-chat">
-      <div class="fake-chat-header">
-        <div class="chat-avatar">👤</div>
-        <div><div class="chat-name">Ex</div><div class="chat-status">online</div></div>
-        <div class="chat-icons">📹 📞</div>
-      </div>
-      <div class="chat-body">
-        <div class="chat-bubble">Oye, necesitamos hablar<span class="btime">01:34</span></div>
-        <div class="chat-bubble">Ni sé cómo decirte esto jaja, pero me di cuenta de que estaba equivocado...<span class="btime">01:35</span></div>
-        <div class="chat-bubble">¡¡¡NO PUEDO VIVIR SIN TI!!!<span class="btime">01:35</span></div>
-        <div class="chat-bubble">Eres la mujer de mi vida, salgamos mañana a hablar, solo te pido eso<span class="btime">01:38</span></div>
-      </div>
-    </div>
+    <img src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag18-depoimento.png" alt="Depoimento" style="width:100%;border-radius:16px;display:block;margin-bottom:20px;" />
     <p class="question">¿Quieres recibir un mensaje así?</p>
     <button class="btn-green" onclick="goTo(19)">¡SÍ, QUIERO QUE ÉL VUELVA!</button>
   </div>
@@ -610,7 +605,7 @@
   <!-- PAGE 19: PROMISE -->
   <div class="page promise-page" id="page-19">
     <h2>El Código de Reactivación Emocional es algo <span>poderoso y debe usarse con responsabilidad.</span> ¡Úsalo solo para reactivar el vínculo con quien realmente amas!</h2>
-    <div class="promise-img">💑</div>
+    <img src="https://raw.githubusercontent.com/henriqbh/quiz-funil/main/pag19-img-casal.png" alt="Casal" style="width:100%;border-radius:16px;object-fit:cover;margin-bottom:16px;display:block;" />
     <p class="question">¿Prometes usarlo con responsabilidad?</p>
     <button class="btn-green" onclick="goTo(20)">¡SÍ, LO VOY A USAR CON LA PERSONA CORRECTA!</button>
   </div>
@@ -952,6 +947,39 @@
   });
 
   updateProgress();
+
+  // CARROSSEL PÁG 17
+  var carouselCurrent = 0;
+  var carouselSlides = document.querySelectorAll('.slide');
+  var carouselDots = document.querySelectorAll('.cdot');
+  var carouselTotal = 3;
+
+  function goSlide(n) {
+    if(!carouselSlides.length) return;
+    carouselSlides[carouselCurrent].style.display = 'none';
+    carouselDots[carouselCurrent].style.width = '8px';
+    carouselDots[carouselCurrent].style.background = '#ddd';
+    carouselCurrent = (n + carouselTotal) % carouselTotal;
+    carouselSlides[carouselCurrent].style.display = 'block';
+    carouselDots[carouselCurrent].style.width = '28px';
+    carouselDots[carouselCurrent].style.background = '#E91E8C';
+    var sc = document.getElementById('slideCounter');
+    if(sc) sc.textContent = (carouselCurrent+1) + ' / ' + carouselTotal;
+  }
+  function nextSlide() { goSlide(carouselCurrent + 1); }
+  function prevSlide() { goSlide(carouselCurrent - 1); }
+
+  // Swipe touch
+  var swipeStartX = 0;
+  var carouselEl = document.getElementById('carousel');
+  if(carouselEl) {
+    carouselEl.addEventListener('touchstart', function(e){ swipeStartX = e.touches[0].clientX; });
+    carouselEl.addEventListener('touchend', function(e){
+      var diff = swipeStartX - e.changedTouches[0].clientX;
+      if(Math.abs(diff) > 40){ diff > 0 ? nextSlide() : prevSlide(); }
+    });
+  }
+
 </script>
 </body>
 </html>
